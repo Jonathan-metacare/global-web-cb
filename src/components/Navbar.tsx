@@ -18,10 +18,10 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const businessLinks = [
-    { title: "生物免疫", href: "/global-business/bio-immune" },
-    { title: "脐血干细胞", href: "/global-business/stem-cells" },
-    { title: "健康养老", href: "/global-business/elderly-care" },
-    { title: "现代商业", href: "/global-business/modern-commerce" },
+    { title: "Bio-Immune", href: "/global-business/bio-immune" },
+    { title: "Stem Cells", href: "/global-business/stem-cells" },
+    { title: "Elderly Care", href: "/global-business/elderly-care" },
+    { title: "Modern Commerce", href: "/global-business/modern-commerce" },
   ];
 
   return (

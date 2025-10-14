@@ -6,56 +6,56 @@ import { Calendar, ArrowRight } from "lucide-react";
 const News = () => {
   const newsItems = [
     {
-      category: "企业动态",
-      title: "公司荣获全球健康产业领军企业称号",
-      date: "2025年3月15日",
-      summary: "在2025年全球健康产业峰会上，公司凭借在生物科技和健康服务领域的卓越成就，荣获全球健康产业领军企业称号。",
+      category: "Corporate",
+      title: "Company Awarded Global Health Industry Leader",
+      date: "March 15, 2025",
+      summary: "At the 2025 Global Health Industry Summit, our company was honored with the Global Health Industry Leader award for outstanding achievements in biotechnology and health services.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop",
     },
     {
-      category: "技术创新",
-      title: "干细胞存储技术取得重大突破",
-      date: "2025年2月28日",
-      summary: "我们的科研团队成功研发出新一代干细胞存储技术，存储效率提升40%，为行业树立新标杆。",
+      category: "Innovation",
+      title: "Major Breakthrough in Stem Cell Storage Technology",
+      date: "February 28, 2025",
+      summary: "Our research team has successfully developed next-generation stem cell storage technology, improving storage efficiency by 40% and setting a new industry standard.",
       image: "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=800&h=400&fit=crop",
     },
     {
-      category: "业务拓展",
-      title: "海外市场布局再下一城",
-      date: "2025年2月10日",
-      summary: "公司在欧洲设立新的研发中心和服务网点，进一步完善全球化业务布局。",
+      category: "Expansion",
+      title: "International Market Expansion Continues",
+      date: "February 10, 2025",
+      summary: "The company has established new research centers and service networks in Europe, further enhancing our global business presence.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop",
     },
     {
-      category: "社会责任",
-      title: "启动健康中国公益项目",
-      date: "2025年1月20日",
-      summary: "公司宣布投入1亿元启动健康中国公益项目，为偏远地区提供免费健康服务。",
+      category: "CSR",
+      title: "Launching Healthy China Public Welfare Project",
+      date: "January 20, 2025",
+      summary: "The company announced a $15 million investment to launch the Healthy China public welfare project, providing free health services to remote areas.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop",
     },
     {
-      category: "行业合作",
-      title: "与国际顶尖医疗机构达成战略合作",
-      date: "2025年1月5日",
-      summary: "公司与多家国际知名医疗机构签署战略合作协议，共同推进生物医疗技术研发。",
+      category: "Partnership",
+      title: "Strategic Cooperation with Top International Medical Institutions",
+      date: "January 5, 2025",
+      summary: "The company has signed strategic cooperation agreements with several internationally renowned medical institutions to jointly advance biomedical technology research.",
       image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=400&fit=crop",
     },
     {
-      category: "企业荣誉",
-      title: "连续五年入选全球最具创新力企业500强",
-      date: "2024年12月15日",
-      summary: "公司凭借持续的技术创新和卓越的市场表现，连续五年入选全球最具创新力企业500强榜单。",
+      category: "Recognition",
+      title: "Named Top 500 Most Innovative Company for Fifth Consecutive Year",
+      date: "December 15, 2024",
+      summary: "With continuous technological innovation and outstanding market performance, the company has been named to the Global Top 500 Most Innovative Companies list for the fifth consecutive year.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
     },
   ];
 
   const categoryColors: { [key: string]: string } = {
-    企业动态: "default",
-    技术创新: "default",
-    业务拓展: "default",
-    社会责任: "default",
-    行业合作: "default",
-    企业荣誉: "default",
+    Corporate: "default",
+    Innovation: "default",
+    Expansion: "default",
+    CSR: "default",
+    Partnership: "default",
+    Recognition: "default",
   };
 
   return (
@@ -66,9 +66,9 @@ const News = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl font-bold mb-6">新闻动态</h1>
+            <h1 className="text-5xl font-bold mb-6">News & Updates</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              了解我们的最新动态、技术创新和行业资讯
+              Stay informed about our latest developments, technological innovations, and industry insights
             </p>
           </div>
 
@@ -104,7 +104,7 @@ const News = () => {
                     {item.summary}
                   </p>
                   <div className="flex items-center text-primary font-medium">
-                    阅读更多
+                    Read More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform" />
                   </div>
                 </CardContent>

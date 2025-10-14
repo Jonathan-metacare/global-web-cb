@@ -7,23 +7,23 @@ const StemCells = () => {
   const features = [
     {
       icon: Database,
-      title: "专业存储",
-      description: "采用国际领先的干细胞存储技术，确保细胞活性和安全",
+      title: "Professional Storage",
+      description: "Utilizing internationally leading stem cell storage technology to ensure cell viability and safety",
     },
     {
       icon: Lock,
-      title: "安全保障",
-      description: "多重安全防护体系，24小时监控，确保样本安全",
+      title: "Security Guarantee",
+      description: "Multiple security protection systems with 24/7 monitoring to ensure sample safety",
     },
     {
       icon: Award,
-      title: "权威认证",
-      description: "通过国际权威机构认证，质量标准达到国际一流水平",
+      title: "Authoritative Certification",
+      description: "Certified by international authoritative organizations with world-class quality standards",
     },
     {
       icon: Globe2,
-      title: "全球服务",
-      description: "覆盖全球主要城市，提供便捷的采集和存储服务",
+      title: "Global Service",
+      description: "Covering major cities worldwide, providing convenient collection and storage services",
     },
   ];
 
@@ -42,9 +42,9 @@ const StemCells = () => {
             />
             <div className="absolute inset-0 bg-gradient-hero flex items-center justify-center">
               <div className="text-center text-white">
-                <h1 className="text-5xl font-bold mb-4">脐血干细胞</h1>
+                <h1 className="text-5xl font-bold mb-4">Umbilical Cord Blood Stem Cells</h1>
                 <p className="text-xl max-w-2xl mx-auto">
-                  专业的脐带血干细胞采集、检测、制备和储存服务
+                  Professional umbilical cord blood stem cell collection, testing, preparation, and storage services
                 </p>
               </div>
             </div>
@@ -54,20 +54,20 @@ const StemCells = () => {
           <section className="mb-16 animate-fade-in">
             <Card className="shadow-elegant border-none">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-6">业务概述</h2>
+                <h2 className="text-3xl font-bold mb-6">Business Overview</h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    作为全球最大的干细胞存储企业，我们为家庭提供专业的脐带血干细胞存储服务。
-                    脐带血中含有丰富的造血干细胞，可用于治疗多种血液系统疾病和免疫系统疾病。
+                    As the world's largest stem cell storage company, we provide professional umbilical cord blood stem cell storage services for families. 
+                    Umbilical cord blood is rich in hematopoietic stem cells that can be used to treat various blood system and immune system diseases.
                   </p>
                   <p>
-                    我们拥有国际领先的干细胞库，采用最先进的液氮储存技术，
-                    确保细胞在超低温环境下长期保存，保持细胞的活性和功能。
-                    我们的存储设施通过了国际权威机构的认证，质量标准达到国际一流水平。
+                    We operate internationally leading stem cell banks using the most advanced liquid nitrogen storage technology, 
+                    ensuring cells are preserved long-term in ultra-low temperature environments while maintaining cell viability and functionality. 
+                    Our storage facilities are certified by international authoritative organizations with world-class quality standards.
                   </p>
                   <p>
-                    多年来，我们已经为超过200万个家庭提供了干细胞存储服务，
-                    存储的干细胞已成功应用于数千例疾病治疗，取得了良好的临床效果。
+                    Over the years, we have provided stem cell storage services to more than 2 million families, 
+                    and the stored stem cells have been successfully applied in thousands of disease treatments with excellent clinical results.
                   </p>
                 </div>
               </CardContent>
@@ -76,7 +76,7 @@ const StemCells = () => {
 
           {/* Features */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">服务特色</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Service Features</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((feature, index) => (
                 <Card
@@ -100,19 +100,19 @@ const StemCells = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">服务数据</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">Service Statistics</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
-                    <div className="text-5xl font-bold mb-2">200万+</div>
-                    <div className="text-lg opacity-90">存储家庭</div>
+                    <div className="text-5xl font-bold mb-2">2M+</div>
+                    <div className="text-lg opacity-90">Families Served</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">99.9%</div>
-                    <div className="text-lg opacity-90">细胞活性</div>
+                    <div className="text-lg opacity-90">Cell Viability</div>
                   </div>
                   <div>
-                    <div className="text-5xl font-bold mb-2">5000+</div>
-                    <div className="text-lg opacity-90">成功应用</div>
+                    <div className="text-5xl font-bold mb-2">5,000+</div>
+                    <div className="text-lg opacity-90">Successful Applications</div>
                   </div>
                 </div>
               </CardContent>

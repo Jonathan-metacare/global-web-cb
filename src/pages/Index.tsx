@@ -13,43 +13,43 @@ const Index = () => {
   const advantages = [
     {
       icon: Globe,
-      title: "全球化业务布局",
-      description: "覆盖全球主要市场，为客户提供国际化的专业服务",
+      title: "Global Business Network",
+      description: "Operating across major markets worldwide, providing professional international services",
     },
     {
       icon: Sparkles,
-      title: "干细胞存储数量全球第一",
-      description: "拥有世界领先的干细胞存储技术和最大的存储量",
+      title: "World's Largest Stem Cell Bank",
+      description: "Leading the industry with world-class stem cell storage technology and capacity",
     },
     {
       icon: Heart,
-      title: "全球养老服务领军企业",
-      description: "提供全方位、高品质的养老健康服务解决方案",
+      title: "Leader in Elderly Care Services",
+      description: "Providing comprehensive, premium elderly care and health solutions",
     },
   ];
 
   const businessSegments = [
     {
-      title: "生物免疫",
-      description: "创新生物免疫治疗技术，为疾病治疗提供新的解决方案",
+      title: "Bio-Immune",
+      description: "Innovative bio-immune therapy technologies providing new solutions for disease treatment",
       image: bioImmuneImage,
       link: "/global-business/bio-immune",
     },
     {
-      title: "脐血干细胞",
-      description: "专业的脐带血干细胞采集、检测、制备和储存服务",
+      title: "Stem Cells",
+      description: "Professional umbilical cord blood stem cell collection, testing, preparation and storage services",
       image: stemCellsImage,
       link: "/global-business/stem-cells",
     },
     {
-      title: "健康养老",
-      description: "全方位的健康管理和高品质养老服务体系",
+      title: "Elderly Care",
+      description: "Comprehensive health management and premium elderly care service system",
       image: elderlyCareImage,
       link: "/global-business/elderly-care",
     },
     {
-      title: "现代商业",
-      description: "创新的商业模式，打造现代化的服务平台",
+      title: "Modern Commerce",
+      description: "Innovative business models creating modernized service platforms",
       image: modernCommerceImage,
       link: "/global-business/modern-commerce",
     },
@@ -69,14 +69,14 @@ const Index = () => {
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            引领全球健康产业未来
+            Leading the Future of Global Health
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in">
-            致力于生物科技创新与健康服务，为人类健康事业做出卓越贡献
+            Dedicated to biotechnology innovation and health services, making outstanding contributions to human health
           </p>
           <Link to="/about">
             <Button size="lg" variant="secondary" className="animate-scale-in">
-              了解更多 <ArrowRight className="ml-2 h-5 w-5" />
+              Learn More <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
         </div>
@@ -85,9 +85,9 @@ const Index = () => {
       {/* Advantages Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">我们的优势</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Our Advantages</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            专业、创新、全球化的服务理念
+            Professional, Innovative, and Global Service Philosophy
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
@@ -112,9 +112,9 @@ const Index = () => {
       {/* Business Segments */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">业务板块</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Business Segments</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            多元化的业务布局，全面覆盖健康产业链
+            Diversified business portfolio covering the complete health industry chain
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {businessSegments.map((segment, index) => (
@@ -139,7 +139,7 @@ const Index = () => {
                     </h3>
                     <p className="text-muted-foreground mb-4">{segment.description}</p>
                     <div className="flex items-center text-primary font-medium">
-                      了解更多
+                      Learn More
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </CardContent>
@@ -153,13 +153,13 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">携手共创健康未来</h2>
+          <h2 className="text-4xl font-bold mb-6">Building a Healthy Future Together</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            我们致力于为全球客户提供最优质的健康服务和解决方案
+            We are committed to providing the highest quality health services and solutions to global clients
           </p>
           <Link to="/contact">
             <Button size="lg" variant="secondary">
-              联系我们 <ArrowRight className="ml-2 h-5 w-5" />
+              Contact Us <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
         </div>

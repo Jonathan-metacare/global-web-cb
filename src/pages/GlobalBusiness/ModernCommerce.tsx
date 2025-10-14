@@ -7,23 +7,23 @@ const ModernCommerce = () => {
   const platforms = [
     {
       icon: Store,
-      title: "零售网络",
-      description: "遍布全国的零售网点，提供便捷的线下购物体验",
+      title: "Retail Network",
+      description: "Nationwide retail network providing convenient offline shopping experiences",
     },
     {
       icon: Smartphone,
-      title: "电商平台",
-      description: "创新的电商平台，实现线上线下融合发展",
+      title: "E-commerce Platform",
+      description: "Innovative e-commerce platform achieving online-offline integration",
     },
     {
       icon: Truck,
-      title: "物流配送",
-      description: "高效的物流配送体系，确保商品快速送达",
+      title: "Logistics & Delivery",
+      description: "Efficient logistics and delivery system ensuring fast product delivery",
     },
     {
       icon: ShoppingBag,
-      title: "会员服务",
-      description: "完善的会员服务体系，提供个性化的购物体验",
+      title: "Membership Service",
+      description: "Comprehensive membership service system providing personalized shopping experiences",
     },
   ];
 
@@ -42,9 +42,9 @@ const ModernCommerce = () => {
             />
             <div className="absolute inset-0 bg-gradient-hero flex items-center justify-center">
               <div className="text-center text-white">
-                <h1 className="text-5xl font-bold mb-4">现代商业</h1>
+                <h1 className="text-5xl font-bold mb-4">Modern Commerce</h1>
                 <p className="text-xl max-w-2xl mx-auto">
-                  创新的商业模式，打造现代化的服务平台
+                  Innovative business models creating modernized service platforms
                 </p>
               </div>
             </div>
@@ -54,21 +54,21 @@ const ModernCommerce = () => {
           <section className="mb-16 animate-fade-in">
             <Card className="shadow-elegant border-none">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-6">业务概述</h2>
+                <h2 className="text-3xl font-bold mb-6">Business Overview</h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    我们的现代商业板块致力于打造创新的零售服务平台，
-                    通过线上线下融合的商业模式，为消费者提供优质的购物体验。
+                    Our modern commerce division is dedicated to creating innovative retail service platforms, 
+                    providing quality shopping experiences through online-offline integrated business models.
                   </p>
                   <p>
-                    我们建立了覆盖全国的零售网络，在主要城市设有大型旗舰店和社区便利店，
-                    为消费者提供便捷的线下购物服务。同时，我们开发了创新的电商平台，
-                    实现了线上线下的无缝对接，为消费者创造全新的购物体验。
+                    We have established a nationwide retail network with large flagship stores and community convenience stores in major cities, 
+                    providing convenient offline shopping services. Meanwhile, we have developed an innovative e-commerce platform, 
+                    achieving seamless online-offline integration and creating new shopping experiences for consumers.
                   </p>
                   <p>
-                    通过整合优质的供应链资源和先进的信息技术，
-                    我们为消费者提供丰富的商品选择、优惠的价格和高效的配送服务，
-                    不断提升客户满意度。
+                    By integrating quality supply chain resources and advanced information technology, 
+                    we provide consumers with abundant product selections, competitive prices, and efficient delivery services, 
+                    continuously improving customer satisfaction.
                   </p>
                 </div>
               </CardContent>
@@ -77,7 +77,7 @@ const ModernCommerce = () => {
 
           {/* Platforms */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">业务平台</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Business Platforms</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {platforms.map((platform, index) => (
                 <Card
@@ -101,19 +101,19 @@ const ModernCommerce = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">业务规模</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">Business Scale</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
-                    <div className="text-5xl font-bold mb-2">1000+</div>
-                    <div className="text-lg opacity-90">零售网点</div>
+                    <div className="text-5xl font-bold mb-2">1,000+</div>
+                    <div className="text-lg opacity-90">Retail Locations</div>
                   </div>
                   <div>
-                    <div className="text-5xl font-bold mb-2">500万+</div>
-                    <div className="text-lg opacity-90">注册会员</div>
+                    <div className="text-5xl font-bold mb-2">5M+</div>
+                    <div className="text-lg opacity-90">Registered Members</div>
                   </div>
                   <div>
-                    <div className="text-5xl font-bold mb-2">100亿+</div>
-                    <div className="text-lg opacity-90">年销售额</div>
+                    <div className="text-5xl font-bold mb-2">$1.5B+</div>
+                    <div className="text-lg opacity-90">Annual Revenue</div>
                   </div>
                 </div>
               </CardContent>

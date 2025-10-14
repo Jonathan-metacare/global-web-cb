@@ -7,23 +7,23 @@ const BioImmune = () => {
   const features = [
     {
       icon: Shield,
-      title: "免疫治疗",
-      description: "利用先进的生物技术增强人体免疫系统，提供个性化免疫治疗方案",
+      title: "Immunotherapy",
+      description: "Utilizing advanced biotechnology to enhance the immune system with personalized immunotherapy solutions",
     },
     {
       icon: Microscope,
-      title: "细胞疗法",
-      description: "采用最新的细胞工程技术，开发创新的细胞治疗产品",
+      title: "Cell Therapy",
+      description: "Employing cutting-edge cell engineering to develop innovative cellular therapeutic products",
     },
     {
       icon: Activity,
-      title: "精准医疗",
-      description: "基于基因组学的精准诊断和治疗，实现个体化医疗",
+      title: "Precision Medicine",
+      description: "Genomics-based precision diagnosis and treatment for personalized healthcare",
     },
     {
       icon: Zap,
-      title: "快速响应",
-      description: "高效的研发和生产体系，快速响应市场需求",
+      title: "Rapid Response",
+      description: "Efficient R&D and production systems enabling quick market responsiveness",
     },
   ];
 
@@ -37,14 +37,14 @@ const BioImmune = () => {
           <div className="relative h-[400px] rounded-2xl overflow-hidden mb-16 animate-fade-in">
             <img
               src={bioImmuneImage}
-              alt="生物免疫"
+              alt="Bio-Immune Therapy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-hero flex items-center justify-center">
               <div className="text-center text-white">
-                <h1 className="text-5xl font-bold mb-4">生物免疫</h1>
+                <h1 className="text-5xl font-bold mb-4">Bio-Immune Therapy</h1>
                 <p className="text-xl max-w-2xl mx-auto">
-                  创新生物免疫治疗技术，为疾病治疗提供新的解决方案
+                  Innovative bio-immune therapy technologies providing new solutions for disease treatment
                 </p>
               </div>
             </div>
@@ -54,20 +54,20 @@ const BioImmune = () => {
           <section className="mb-16 animate-fade-in">
             <Card className="shadow-elegant border-none">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-6">业务概述</h2>
+                <h2 className="text-3xl font-bold mb-6">Business Overview</h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    我们的生物免疫业务专注于开发创新的免疫治疗技术和产品，
-                    致力于为肿瘤、自身免疫性疾病等重大疾病提供有效的治疗方案。
+                    Our bio-immune business focuses on developing innovative immunotherapy technologies and products, 
+                    committed to providing effective treatment solutions for major diseases such as tumors and autoimmune diseases.
                   </p>
                   <p>
-                    通过整合国际领先的生物技术和临床资源，
-                    我们建立了完整的生物免疫治疗产业链，
-                    从研发到生产，从临床试验到市场应用，为患者提供全方位的服务。
+                    By integrating internationally leading biotechnology and clinical resources, 
+                    we have established a complete bio-immune therapy industry chain, 
+                    from R&D to production, from clinical trials to market application, providing comprehensive services to patients.
                   </p>
                   <p>
-                    我们的研发团队由国际知名的免疫学专家组成，
-                    拥有多项核心技术专利，在细胞免疫治疗、抗体药物等领域取得了突破性进展。
+                    Our R&D team comprises internationally renowned immunology experts, 
+                    holding multiple core technology patents and achieving breakthrough progress in cellular immunotherapy and antibody drugs.
                   </p>
                 </div>
               </CardContent>
@@ -76,7 +76,7 @@ const BioImmune = () => {
 
           {/* Features */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">核心优势</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Core Advantages</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((feature, index) => (
                 <Card
@@ -100,19 +100,19 @@ const BioImmune = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">业务成就</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">Business Achievements</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
                     <div className="text-5xl font-bold mb-2">50+</div>
-                    <div className="text-lg opacity-90">在研项目</div>
+                    <div className="text-lg opacity-90">Research Projects</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">30+</div>
-                    <div className="text-lg opacity-90">核心专利</div>
+                    <div className="text-lg opacity-90">Core Patents</div>
                   </div>
                   <div>
-                    <div className="text-5xl font-bold mb-2">10000+</div>
-                    <div className="text-lg opacity-90">服务患者</div>
+                    <div className="text-5xl font-bold mb-2">10,000+</div>
+                    <div className="text-lg opacity-90">Patients Served</div>
                   </div>
                 </div>
               </CardContent>

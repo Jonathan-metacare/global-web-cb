@@ -9,18 +9,18 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "联系电话",
-      content: "+86 400-123-4567",
+      title: "Phone",
+      content: "+1 (800) 123-4567",
     },
     {
       icon: Mail,
-      title: "电子邮箱",
+      title: "Email",
       content: "contact@globalhealth.com",
     },
     {
       icon: MapPin,
-      title: "总部地址",
-      content: "中国上海市浦东新区世纪大道1000号",
+      title: "Headquarters",
+      content: "1000 Century Avenue, Pudong, Shanghai, China",
     },
   ];
 
@@ -32,9 +32,9 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl font-bold mb-6">联系我们</h1>
+            <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              我们期待与您交流，为您提供专业的健康服务解决方案
+              We look forward to connecting with you and providing professional health service solutions
             </p>
           </div>
 
@@ -42,9 +42,9 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8 animate-fade-in">
               <div>
-                <h2 className="text-3xl font-bold mb-6">联系方式</h2>
+                <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-muted-foreground mb-8 text-lg">
-                  如有任何疑问或需求，欢迎通过以下方式联系我们，我们将竭诚为您服务。
+                  If you have any questions or needs, please feel free to contact us through the following methods. We are at your service.
                 </p>
               </div>
 
@@ -69,12 +69,12 @@ const Contact = () => {
 
               <Card className="border-none shadow-elegant bg-gradient-primary text-white">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">工作时间</h3>
+                  <h3 className="text-2xl font-bold mb-4">Business Hours</h3>
                   <div className="space-y-2 text-lg opacity-90">
-                    <p>周一至周五：9:00 - 18:00</p>
-                    <p>周六至周日：10:00 - 17:00</p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday - Sunday: 10:00 AM - 5:00 PM</p>
                     <p className="mt-4 text-sm opacity-75">
-                      节假日照常营业，为您提供不间断服务
+                      Open on holidays, providing uninterrupted service
                     </p>
                   </div>
                 </CardContent>
@@ -85,44 +85,44 @@ const Contact = () => {
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <Card className="border-none shadow-elegant">
                 <CardContent className="p-8">
-                  <h2 className="text-3xl font-bold mb-6">在线留言</h2>
+                  <h2 className="text-3xl font-bold mb-6">Send a Message</h2>
                   <form className="space-y-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        姓名 *
+                        Name *
                       </label>
-                      <Input placeholder="请输入您的姓名" />
+                      <Input placeholder="Enter your name" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        电子邮箱 *
+                        Email *
                       </label>
-                      <Input type="email" placeholder="请输入您的邮箱" />
+                      <Input type="email" placeholder="Enter your email" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        联系电话
+                        Phone
                       </label>
-                      <Input type="tel" placeholder="请输入您的电话" />
+                      <Input type="tel" placeholder="Enter your phone number" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        咨询主题 *
+                        Subject *
                       </label>
-                      <Input placeholder="请简要描述咨询主题" />
+                      <Input placeholder="Briefly describe your inquiry" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        留言内容 *
+                        Message *
                       </label>
                       <Textarea
-                        placeholder="请详细描述您的需求或问题"
+                        placeholder="Please describe your needs or questions in detail"
                         rows={6}
                       />
                     </div>
                     <Button className="w-full" size="lg">
                       <Send className="mr-2 h-5 w-5" />
-                      提交留言
+                      Submit Message
                     </Button>
                   </form>
                 </CardContent>
