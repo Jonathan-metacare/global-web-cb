@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import { useTranslation } from "react-i18next";
 import {
   Carousel,
   CarouselContent,
@@ -21,87 +22,53 @@ import elderlyCareImage from "@/assets/elderly-care.jpg";
 import modernCommerceImage from "@/assets/modern-commerce.jpg";
 
 const Index = () => {
+  const { t } = useTranslation();
+
   const bannerSlides = [
     {
       image: heroImage,
-      title: "Leading the Future of Global Health",
-      description: "Dedicated to biotechnology innovation and health services, making outstanding contributions to human health"
+      title: t('home.hero.title'),
+      description: t('home.hero.subtitle')
     },
     {
       image: heroImage2,
-      title: "Innovation in Biotechnology",
-      description: "Advancing medical research with cutting-edge technology and expertise"
+      title: t('home.hero.title'),
+      description: t('home.hero.subtitle')
     },
     {
       image: heroTech,
-      title: "Digital Health Solutions",
-      description: "Transforming healthcare through data-driven insights and innovation"
+      title: t('home.hero.title'),
+      description: t('home.hero.subtitle')
     },
     {
       image: worldMap,
-      title: "Global Presence",
-      description: "Service centers in Nanjing, Singapore, and Malaysia serving clients worldwide"
+      title: t('home.worldMap.title'),
+      description: t('home.worldMap.subtitle')
     }
-  ];
-
-  const advantages = [
-    {
-      title: "Global Business Network",
-      description: "Operating across major markets worldwide with service centers strategically located in Asia-Pacific region, providing professional international services and support to clients globally.",
-    },
-    {
-      title: "World's Largest Stem Cell Bank",
-      description: "Leading the industry with world-class stem cell storage technology and capacity, ensuring the highest standards of preservation and accessibility for future medical treatments.",
-    },
-    {
-      title: "Leader in Elderly Care Services",
-      description: "Providing comprehensive, premium elderly care and health solutions with compassionate service, state-of-the-art facilities, and experienced healthcare professionals.",
-    },
-  ];
-
-  const latestNews = [
-    {
-      category: "Corporate",
-      title: "Company Awarded Global Health Industry Leader",
-      date: "March 15, 2025",
-      summary: "At the 2025 Global Health Industry Summit, our company was honored with the Global Health Industry Leader award for outstanding achievements in biotechnology and health services.",
-    },
-    {
-      category: "Innovation",
-      title: "Major Breakthrough in Stem Cell Storage Technology",
-      date: "February 28, 2025",
-      summary: "Our research team has successfully developed next-generation stem cell storage technology, improving storage efficiency by 40% and setting a new industry standard.",
-    },
-    {
-      category: "Expansion",
-      title: "International Market Expansion Continues",
-      date: "February 10, 2025",
-      summary: "The company has established new research centers and service networks in Europe, further enhancing our global business presence.",
-    },
   ];
 
   const businessSegments = [
     {
-      title: "Bio-Immune",
-      description: "Innovative bio-immune therapy technologies providing new solutions for disease treatment",
+      title: t('home.business.bioImmune.title'),
+      description: t('home.business.bioImmune.description'),
       image: bioImmuneImage,
       link: "/global-business/bio-immune",
     },
     {
-      title: "Stem Cells",
-      description: "Professional umbilical cord blood stem cell collection, testing, preparation and storage services",
+      title: t('home.business.stemCells.title'),
+      description: t('home.business.stemCells.description'),
       image: stemCellsImage,
       link: "/global-business/stem-cells",
     },
     {
-      title: "Elderly Care",
-      description: "Comprehensive health management and premium elderly care service system",
+      title: t('home.business.elderlyCare.title'),
+      description: t('home.business.elderlyCare.description'),
       image: elderlyCareImage,
       link: "/global-business/elderly-care",
     },
     {
-      title: "Modern Commerce",
-      description: "Innovative business models creating modernized service platforms",
+      title: t('home.business.modernCommerce.title'),
+      description: t('home.business.modernCommerce.description'),
       image: modernCommerceImage,
       link: "/global-business/modern-commerce",
     },
@@ -133,7 +100,7 @@ const Index = () => {
                     </p>
                     <Link to="/about">
                       <Button size="lg" variant="secondary" className="animate-scale-in">
-                        Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                        {t('home.hero.cta')} <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
                   </div>
@@ -149,21 +116,25 @@ const Index = () => {
       {/* Advantages Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Our Advantages</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">{t('home.advantages.title')}</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            Professional, Innovative, and Global Service Philosophy
+            {t('home.advantages.subtitle')}
           </p>
           <Card className="border-none shadow-elegant max-w-5xl mx-auto">
             <CardContent className="p-12">
               <div className="space-y-8">
-                {advantages.map((advantage, index) => (
+                {[0, 1, 2, 3].map((index) => (
                   <div
                     key={index}
                     className="pb-8 border-b border-border last:border-0 last:pb-0 animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <h3 className="text-2xl font-bold mb-4 text-primary">{advantage.title}</h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed">{advantage.description}</p>
+                    <h3 className="text-2xl font-bold mb-4 text-primary">
+                      {t(`home.advantages.items.${index}.title`)}
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      {t(`home.advantages.items.${index}.description`)}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -178,9 +149,9 @@ const Index = () => {
       {/* Business Segments */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Business Segments</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">{t('home.business.title')}</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            Diversified business portfolio covering the complete health industry chain
+            {t('home.business.subtitle')}
           </p>
           <div className="space-y-6 max-w-7xl mx-auto">
             {businessSegments.map((segment, index) => (
@@ -205,7 +176,7 @@ const Index = () => {
                         {segment.description}
                       </p>
                       <div className="flex items-center text-primary font-semibold text-lg">
-                        Learn More
+                        {t('home.business.learnMore')}
                         <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-2 transition-transform" />
                       </div>
                     </div>
@@ -222,17 +193,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
             <div>
-              <h2 className="text-4xl font-bold mb-2">Latest News</h2>
-              <p className="text-muted-foreground text-lg">Stay updated with our recent developments</p>
+              <h2 className="text-4xl font-bold mb-2">{t('home.news.title')}</h2>
+              <p className="text-muted-foreground text-lg">{t('home.news.subtitle')}</p>
             </div>
             <Link to="/news">
               <Button variant="outline" size="lg">
-                View All News <ArrowRight className="ml-2 h-5 w-5" />
+                {t('home.news.viewAll')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {latestNews.map((news, index) => (
+            {[0, 1, 2].map((index) => (
               <Card
                 key={index}
                 className="border-none shadow-elegant hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer group animate-fade-in"
@@ -241,16 +212,16 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center text-sm text-muted-foreground mb-3">
                     <Calendar className="h-4 w-4 mr-2" />
-                    {news.date}
+                    {t(`news.items.${index}.date`)}
                   </div>
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                    {news.title}
+                    {t(`news.items.${index}.title`)}
                   </h3>
                   <p className="text-muted-foreground mb-4 line-clamp-3">
-                    {news.summary}
+                    {t(`news.items.${index}.summary`)}
                   </p>
                   <div className="flex items-center text-primary font-medium">
-                    Read More
+                    {t('news.readMore')}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform" />
                   </div>
                 </CardContent>
@@ -263,7 +234,7 @@ const Index = () => {
       {/* External Links Section */}
       <section className="py-20 bg-gradient-primary text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Useful Links</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">{t('home.links.title')}</h2>
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <a
               href="https://www.who.int"

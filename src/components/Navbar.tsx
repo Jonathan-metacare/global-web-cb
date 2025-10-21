@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,14 +15,20 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const isActive = (path: string) => location.pathname === path;
 
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'zh' : 'en';
+    i18n.changeLanguage(newLang);
+  };
+
   const businessLinks = [
-    { title: "Bio-Immune", href: "/global-business/bio-immune" },
-    { title: "Stem Cells", href: "/global-business/stem-cells" },
-    { title: "Elderly Care", href: "/global-business/elderly-care" },
-    { title: "Modern Commerce", href: "/global-business/modern-commerce" },
+    { title: t('nav.bioImmune'), href: "/global-business/bio-immune" },
+    { title: t('nav.stemCells'), href: "/global-business/stem-cells" },
+    { title: t('nav.elderlyCare'), href: "/global-business/elderly-care" },
+    { title: t('nav.modernCommerce'), href: "/global-business/modern-commerce" },
   ];
 
   return (
@@ -49,7 +56,7 @@ const Navbar = () => {
                           : "hover:bg-muted"
                       }`}
                     >
-                      HOME
+                      {t('nav.home')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -63,7 +70,7 @@ const Navbar = () => {
                           : "hover:bg-muted"
                       }`}
                     >
-                      About us
+                      {t('nav.about')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -77,7 +84,7 @@ const Navbar = () => {
                           : "hover:bg-muted"
                       }`}
                     >
-                      News
+                      {t('nav.news')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -90,7 +97,7 @@ const Navbar = () => {
                         : ""
                     }`}
                   >
-                    Global Business
+                    {t('nav.globalBusiness')}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 bg-popover">
@@ -122,23 +129,49 @@ const Navbar = () => {
                           : "hover:bg-muted"
                       }`}
                     >
-                      Contact
+                      {t('nav.contact')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+            
+            {/* Language Toggle Button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              className="ml-2"
+              title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
+            >
+              <Languages className="h-5 w-5" />
+              <span className="ml-1 text-xs font-semibold">
+                {i18n.language === 'en' ? 'EN' : '中'}
+              </span>
+            </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          {/* Mobile menu button and language toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
+            >
+              <Languages className="h-5 w-5" />
+              <span className="ml-1 text-xs font-semibold">
+                {i18n.language === 'en' ? 'EN' : '中'}
+              </span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -153,7 +186,7 @@ const Navbar = () => {
               }`}
               onClick={() => setIsOpen(false)}
             >
-              HOME
+              {t('nav.home')}
             </Link>
             <Link
               to="/about"
@@ -164,7 +197,7 @@ const Navbar = () => {
               }`}
               onClick={() => setIsOpen(false)}
             >
-              About us
+              {t('nav.about')}
             </Link>
             <Link
               to="/news"
@@ -175,11 +208,11 @@ const Navbar = () => {
               }`}
               onClick={() => setIsOpen(false)}
             >
-              News
+              {t('nav.news')}
             </Link>
             <div className="space-y-1">
               <div className="px-4 py-2 font-semibold text-sm text-muted-foreground">
-                Global Business
+                {t('nav.globalBusiness')}
               </div>
               {businessLinks.map((link) => (
                 <Link
@@ -205,7 +238,7 @@ const Navbar = () => {
               }`}
               onClick={() => setIsOpen(false)}
             >
-              Contact
+              {t('nav.contact')}
             </Link>
           </div>
         )}

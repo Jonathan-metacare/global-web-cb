@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "About Us",
+    "news": "News",
+    "contact": "Contact",
+    "globalBusiness": "Global Business",
+    "bioImmune": "Bio-Immune Therapy",
+    "stemCells": "Stem Cell Storage",
+    "elderlyCare": "Elderly Care Services",
+    "modernCommerce": "Modern Commerce"
+  },
+  "home": {
+    "hero": {
+      "title": "Leading Global Health & Wellness Innovation",
+      "subtitle": "Integrating cutting-edge biotechnology with comprehensive healthcare services to create a healthier future for humanity",
+      "cta": "Learn More"
+    },
+    "worldMap": {
+      "title": "Global Presence",
+      "subtitle": "Operating centers across Asia-Pacific region",
+      "nanjing": "Nanjing, China",
+      "singapore": "Singapore",
+      "malaysia": "Malaysia"
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "subtitle": "Industry-leading technology and comprehensive service system",
+      "items": [
+        {
+          "title": "Advanced Technology",
+          "description": "Utilizing world-class biotechnology and medical equipment, continuously driving technological innovation and industry advancement"
+        },
+        {
+          "title": "Professional Team",
+          "description": "Elite team composed of internationally renowned experts and scholars, providing professional and reliable services"
+        },
+        {
+          "title": "Quality Service",
+          "description": "Patient-centered approach with comprehensive service system covering consultation, treatment, and follow-up"
+        },
+        {
+          "title": "Global Network",
+          "description": "Extensive global network providing consistent high-quality services across multiple countries and regions"
+        }
+      ],
+      "watchVideo": "Watch Video"
+    },
+    "business": {
+      "title": "Business Segments",
+      "subtitle": "Comprehensive health industry ecosystem covering biotechnology, elderly care, and modern commerce",
+      "bioImmune": {
+        "title": "Bio-Immune Therapy",
+        "description": "Leading cellular immunotherapy technology providing innovative treatment solutions"
+      },
+      "stemCells": {
+        "title": "Stem Cell Storage",
+        "description": "Professional stem cell collection and storage services, safeguarding your health future"
+      },
+      "elderlyCare": {
+        "title": "Elderly Care Services",
+        "description": "Comprehensive elderly care solutions integrating medical care, nursing, and rehabilitation"
+      },
+      "modernCommerce": {
+        "title": "Modern Commerce",
+        "description": "Innovative commercial model combining online and offline to create quality lifestyle"
+      },
+      "learnMore": "Learn More"
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "Stay updated with company developments and industry insights",
+      "viewAll": "View All News"
+    },
+    "links": {
+      "title": "External Links",
+      "industry": "Industry Association",
+      "partners": "Partner Organizations",
+      "resources": "Resource Center"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Leading global health industry group integrating biotechnology, healthcare services, and modern commerce",
+    "overview": {
+      "title": "Company Overview",
+      "content": "We are a comprehensive health industry group focused on biotechnology R&D, healthcare services, and modern commerce. With over 20 years of industry experience, we have established a complete health industry ecosystem. Our business spans bio-immune therapy, stem cell storage, elderly care services, and modern commerce, serving millions of users across multiple countries and regions globally. The company is committed to improving human health and quality of life through continuous technological innovation and service optimization."
+    },
+    "values": {
+      "title": "Core Values",
+      "innovation": {
+        "title": "Innovation-Driven",
+        "description": "Continuous technological innovation is the source of corporate development"
+      },
+      "quality": {
+        "title": "Quality First",
+        "description": "Providing excellent services with the highest quality standards"
+      },
+      "people": {
+        "title": "People-Oriented",
+        "description": "Customers and employees are our most valuable assets"
+      },
+      "responsibility": {
+        "title": "Social Responsibility",
+        "description": "Actively fulfilling corporate social responsibility and giving back to society"
+      }
+    },
+    "achievements": {
+      "title": "Achievements",
+      "cities": "Cities Served",
+      "clients": "Service Clients",
+      "experience": "Years of Industry Experience"
+    }
+  },
+  "news": {
+    "title": "News & Updates",
+    "subtitle": "Stay informed about the latest company developments and industry insights",
+    "readMore": "Read More",
+    "items": [
+      {
+        "category": "Company News",
+        "title": "Company Awarded 'Global Health Industry Leader' Title",
+        "date": "March 15, 2025",
+        "summary": "At the 2025 Global Health Industry Summit, the company was awarded the 'Global Health Industry Leader' title for its outstanding achievements in biotechnology and healthcare services."
+      },
+      {
+        "category": "Tech Innovation",
+        "title": "Major Breakthrough in Stem Cell Storage Technology",
+        "date": "February 28, 2025",
+        "summary": "Our research team successfully developed next-generation stem cell storage technology, improving storage efficiency by 40% and setting a new industry benchmark."
+      },
+      {
+        "category": "Business Expansion",
+        "title": "Overseas Market Expansion Advances",
+        "date": "February 10, 2025",
+        "summary": "The company established new R&D centers and service locations in Europe, further improving its global business layout."
+      },
+      {
+        "category": "Industry Cooperation",
+        "title": "Partnership with Leading Research Institutions",
+        "date": "January 25, 2025",
+        "summary": "The company signed strategic cooperation agreements with multiple well-known research institutions to jointly advance biotechnology development."
+      },
+      {
+        "category": "Social Responsibility",
+        "title": "Launch of 'Healthy China' Public Welfare Project",
+        "date": "January 20, 2025",
+        "summary": "The company announced an investment of 100 million yuan to launch the 'Healthy China' public welfare project, providing free health services to remote areas."
+      },
+      {
+        "category": "Industry Cooperation",
+        "title": "Strategic Cooperation with International Top Medical Institutions",
+        "date": "January 5, 2025",
+        "summary": "The company signed strategic cooperation agreements with multiple internationally renowned medical institutions to jointly advance biomedical technology R&D."
+      },
+      {
+        "category": "Company Honors",
+        "title": "Selected as 'Global Top 500 Most Innovative Companies' for Five Consecutive Years",
+        "date": "December 15, 2024",
+        "summary": "The company has been selected for the 'Global Top 500 Most Innovative Companies' list for five consecutive years due to continuous technological innovation and excellent market performance."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your questions and provide professional consultation services",
+    "phone": "Phone",
+    "email": "Email",
+    "headquarters": "Headquarters",
+    "businessHours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday",
+      "weekend": "Saturday - Sunday",
+      "time": "9:00 AM - 6:00 PM"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "bioImmune": {
+    "title": "Bio-Immune Therapy",
+    "overview": {
+      "title": "Business Overview",
+      "content": "Bio-immune therapy is an innovative treatment method utilizing the body's immune system to fight diseases. We have introduced the world's most advanced cellular immunotherapy technology to provide patients with safe, effective, and personalized treatment solutions. Our professional team includes internationally renowned immunology experts and clinical physicians dedicated to driving the development and application of bio-immune therapy technology."
+    },
+    "advantages": {
+      "title": "Core Advantages",
+      "technology": {
+        "title": "Advanced Technology",
+        "description": "Adopting internationally leading cellular culture and modification technologies"
+      },
+      "team": {
+        "title": "Expert Team",
+        "description": "Elite team composed of international immunology experts"
+      },
+      "safety": {
+        "title": "Safety Assurance",
+        "description": "Comprehensive quality control system ensuring treatment safety"
+      },
+      "personalized": {
+        "title": "Personalized Solutions",
+        "description": "Customized treatment plans based on individual patient conditions"
+      }
+    },
+    "achievements": {
+      "title": "Business Achievements",
+      "treatments": "Treatment Cases",
+      "satisfaction": "Patient Satisfaction",
+      "partners": "Partner Hospitals"
+    }
+  },
+  "stemCells": {
+    "title": "Stem Cell Storage",
+    "overview": {
+      "title": "Business Overview",
+      "content": "We provide professional stem cell collection, processing, and storage services, utilizing the world's most advanced cryopreservation technology to ensure the long-term viability and safety of stem cells. Our storage facilities meet international standards and employ comprehensive quality management systems. Through professional services, we help families preserve valuable health resources for the future."
+    },
+    "advantages": {
+      "title": "Service Advantages",
+      "technology": {
+        "title": "Advanced Equipment",
+        "description": "Utilizing internationally leading cryopreservation equipment and technology"
+      },
+      "standards": {
+        "title": "International Standards",
+        "description": "Storage facilities meet international certification standards"
+      },
+      "monitoring": {
+        "title": "24/7 Monitoring",
+        "description": "Comprehensive monitoring system ensuring storage safety"
+      },
+      "team": {
+        "title": "Professional Team",
+        "description": "Experienced collection and storage specialist team"
+      }
+    },
+    "achievements": {
+      "title": "Service Scale",
+      "samples": "Stored Samples",
+      "families": "Service Families",
+      "experience": "Years of Professional Experience"
+    }
+  },
+  "elderlyCare": {
+    "title": "Elderly Care Services",
+    "overview": {
+      "title": "Business Overview",
+      "content": "We provide comprehensive elderly care solutions integrating medical care, nursing, and rehabilitation. Our professional team is composed of senior nursing experts, rehabilitation therapists, and medical personnel, providing elderly individuals with comprehensive, professional, and caring services. Through the integration of smart technology and humanistic care, we are committed to creating a warm, comfortable living environment for the elderly."
+    },
+    "advantages": {
+      "title": "Service Features",
+      "medical": {
+        "title": "Medical Integration",
+        "description": "Deep integration of medical and nursing resources providing comprehensive health management"
+      },
+      "professional": {
+        "title": "Professional Care",
+        "description": "Professional nursing team providing 24-hour quality care services"
+      },
+      "rehabilitation": {
+        "title": "Rehabilitation Training",
+        "description": "Scientific rehabilitation programs helping elderly maintain physical function"
+      },
+      "smart": {
+        "title": "Smart Management",
+        "description": "Utilizing smart technology improving service efficiency and quality"
+      }
+    },
+    "achievements": {
+      "title": "Service Scale",
+      "institutions": "Care Institutions",
+      "beds": "Care Beds",
+      "satisfaction": "Family Satisfaction"
+    }
+  },
+  "modernCommerce": {
+    "title": "Modern Commerce",
+    "overview": {
+      "title": "Business Overview",
+      "content": "We are committed to building a modern commercial ecosystem that integrates online and offline channels. Through innovative business models and quality service experiences, we provide consumers with convenient, high-quality shopping and lifestyle services. Our business covers retail, e-commerce, logistics, and other fields, forming a complete commercial service chain."
+    },
+    "platforms": {
+      "title": "Business Platforms",
+      "retail": {
+        "title": "Retail Network",
+        "description": "Extensive offline retail network providing quality shopping experience"
+      },
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "Comprehensive online shopping platform enabling convenient shopping anytime, anywhere"
+      },
+      "logistics": {
+        "title": "Logistics Services",
+        "description": "Efficient logistics system ensuring fast and safe delivery"
+      },
+      "membership": {
+        "title": "Membership System",
+        "description": "Comprehensive membership service system providing exclusive benefits"
+      }
+    },
+    "achievements": {
+      "title": "Business Scale",
+      "stores": "Retail Stores",
+      "users": "Platform Users",
+      "gmv": "Annual GMV"
+    }
+  }
+}

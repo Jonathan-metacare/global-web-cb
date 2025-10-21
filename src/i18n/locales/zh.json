@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "news": "新闻动态",
+    "contact": "联系我们",
+    "globalBusiness": "全球业务",
+    "bioImmune": "生物免疫疗法",
+    "stemCells": "干细胞存储",
+    "elderlyCare": "养老服务",
+    "modernCommerce": "现代商业"
+  },
+  "home": {
+    "hero": {
+      "title": "引领全球健康产业创新",
+      "subtitle": "融合尖端生物科技与全方位医疗服务，为人类创造更健康的未来",
+      "cta": "了解更多"
+    },
+    "worldMap": {
+      "title": "全球布局",
+      "subtitle": "在亚太地区设有多个运营中心",
+      "nanjing": "中国南京",
+      "singapore": "新加坡",
+      "malaysia": "马来西亚"
+    },
+    "advantages": {
+      "title": "我们的优势",
+      "subtitle": "行业领先的技术实力和完善的服务体系",
+      "items": [
+        {
+          "title": "技术领先",
+          "description": "采用世界一流的生物科技和医疗设备，持续推动技术创新和行业进步"
+        },
+        {
+          "title": "专业团队",
+          "description": "汇聚国际知名专家学者的精英团队，提供专业可靠的服务保障"
+        },
+        {
+          "title": "优质服务",
+          "description": "以患者为中心的服务理念，完善的服务体系覆盖咨询、治疗、随访全流程"
+        },
+        {
+          "title": "全球网络",
+          "description": "遍布全球的服务网络，在多个国家和地区提供一致的高品质服务"
+        }
+      ],
+      "watchVideo": "观看视频"
+    },
+    "business": {
+      "title": "业务板块",
+      "subtitle": "涵盖生物科技、养老服务、现代商业的全方位健康产业生态",
+      "bioImmune": {
+        "title": "生物免疫疗法",
+        "description": "领先的细胞免疫治疗技术，为患者提供创新的治疗方案"
+      },
+      "stemCells": {
+        "title": "干细胞存储",
+        "description": "专业的干细胞采集与存储服务，为您的健康未来保驾护航"
+      },
+      "elderlyCare": {
+        "title": "养老服务",
+        "description": "融合医疗、护理、康复的综合养老解决方案"
+      },
+      "modernCommerce": {
+        "title": "现代商业",
+        "description": "线上线下融合的创新商业模式，打造品质生活方式"
+      },
+      "learnMore": "了解更多"
+    },
+    "news": {
+      "title": "最新动态",
+      "subtitle": "及时了解公司发展和行业资讯",
+      "viewAll": "查看全部新闻"
+    },
+    "links": {
+      "title": "外部链接",
+      "industry": "行业协会",
+      "partners": "合作机构",
+      "resources": "资源中心"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "引领全球健康产业的综合性集团，融合生物科技、医疗服务与现代商业",
+    "overview": {
+      "title": "公司概况",
+      "content": "我们是一家专注于生物科技研发、医疗健康服务和现代商业的综合性健康产业集团。凭借20余年的行业深耕，我们已建立起完整的健康产业生态链。公司业务涵盖生物免疫疗法、干细胞存储、养老服务、现代商业等多个领域，服务网络遍布全球多个国家和地区，为数百万用户提供专业服务。公司始终秉持创新驱动发展的理念，致力于通过持续的技术创新和服务优化，为人类健康和生活品质的提升做出贡献。"
+    },
+    "values": {
+      "title": "核心价值观",
+      "innovation": {
+        "title": "创新驱动",
+        "description": "持续的技术创新是企业发展的源动力"
+      },
+      "quality": {
+        "title": "品质至上",
+        "description": "以最高标准提供卓越的产品和服务"
+      },
+      "people": {
+        "title": "以人为本",
+        "description": "客户和员工是我们最宝贵的财富"
+      },
+      "responsibility": {
+        "title": "社会责任",
+        "description": "积极履行企业社会责任，回馈社会"
+      }
+    },
+    "achievements": {
+      "title": "发展成就",
+      "cities": "服务城市",
+      "clients": "服务客户",
+      "experience": "行业经验"
+    }
+  },
+  "news": {
+    "title": "新闻动态",
+    "subtitle": "及时了解公司最新动态和行业资讯",
+    "readMore": "阅读更多",
+    "items": [
+      {
+        "category": "企业动态",
+        "title": "公司荣获全球健康产业领军企业称号",
+        "date": "2025年3月15日",
+        "summary": "在2025年全球健康产业峰会上，公司凭借在生物科技和健康服务领域的卓越成就，荣获全球健康产业领军企业称号。"
+      },
+      {
+        "category": "技术创新",
+        "title": "干细胞存储技术取得重大突破",
+        "date": "2025年2月28日",
+        "summary": "我们的科研团队成功研发出新一代干细胞存储技术，存储效率提升40%，为行业树立新标杆。"
+      },
+      {
+        "category": "业务拓展",
+        "title": "海外市场布局再下一城",
+        "date": "2025年2月10日",
+        "summary": "公司在欧洲设立新的研发中心和服务网点，进一步完善全球化业务布局。"
+      },
+      {
+        "category": "行业合作",
+        "title": "与顶尖科研机构达成合作",
+        "date": "2025年1月25日",
+        "summary": "公司与多家知名科研机构签署战略合作协议，共同推进生物科技研发。"
+      },
+      {
+        "category": "社会责任",
+        "title": "启动健康中国公益项目",
+        "date": "2025年1月20日",
+        "summary": "公司宣布投入1亿元启动健康中国公益项目，为偏远地区提供免费健康服务。"
+      },
+      {
+        "category": "行业合作",
+        "title": "与国际顶尖医疗机构达成战略合作",
+        "date": "2025年1月5日",
+        "summary": "公司与多家国际知名医疗机构签署战略合作协议，共同推进生物医疗技术研发。"
+      },
+      {
+        "category": "企业荣誉",
+        "title": "连续五年入选全球最具创新力企业500强",
+        "date": "2024年12月15日",
+        "summary": "公司凭借持续的技术创新和卓越的市场表现，连续五年入选全球最具创新力企业500强榜单。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们随时为您解答疑问，提供专业的咨询服务",
+    "phone": "联系电话",
+    "email": "电子邮箱",
+    "headquarters": "总部地址",
+    "businessHours": {
+      "title": "营业时间",
+      "weekdays": "周一至周五",
+      "weekend": "周六至周日",
+      "time": "上午9:00 - 下午6:00"
+    },
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "email": "邮箱",
+      "phone": "电话",
+      "subject": "主题",
+      "message": "留言内容",
+      "send": "发送消息"
+    }
+  },
+  "bioImmune": {
+    "title": "生物免疫疗法",
+    "overview": {
+      "title": "业务概述",
+      "content": "生物免疫疗法是一种利用人体自身免疫系统对抗疾病的创新治疗方法。我们引进了国际最先进的细胞免疫治疗技术，为患者提供安全、有效、个性化的治疗方案。我们的专业团队由国际知名免疫学专家和临床医生组成，致力于推动生物免疫疗法技术的发展和应用。"
+    },
+    "advantages": {
+      "title": "核心优势",
+      "technology": {
+        "title": "技术先进",
+        "description": "采用国际领先的细胞培养和改造技术"
+      },
+      "team": {
+        "title": "专家团队",
+        "description": "汇聚国际免疫学专家的精英团队"
+      },
+      "safety": {
+        "title": "安全保障",
+        "description": "完善的质量控制体系确保治疗安全"
+      },
+      "personalized": {
+        "title": "个性化方案",
+        "description": "根据患者个体情况定制治疗方案"
+      }
+    },
+    "achievements": {
+      "title": "业务成果",
+      "treatments": "治疗案例",
+      "satisfaction": "患者满意度",
+      "partners": "合作医院"
+    }
+  },
+  "stemCells": {
+    "title": "干细胞存储",
+    "overview": {
+      "title": "业务概述",
+      "content": "我们提供专业的干细胞采集、处理和存储服务，采用世界最先进的低温保存技术，确保干细胞的长期活性和安全。我们的存储设施符合国际标准，配备完善的质量管理体系。通过专业的服务，我们帮助家庭为未来保存宝贵的健康资源。"
+    },
+    "advantages": {
+      "title": "服务优势",
+      "technology": {
+        "title": "设备先进",
+        "description": "采用国际领先的低温保存设备和技术"
+      },
+      "standards": {
+        "title": "国际标准",
+        "description": "存储设施符合国际认证标准"
+      },
+      "monitoring": {
+        "title": "全天候监控",
+        "description": "完善的监控系统确保存储安全"
+      },
+      "team": {
+        "title": "专业团队",
+        "description": "经验丰富的采集和存储专业团队"
+      }
+    },
+    "achievements": {
+      "title": "服务规模",
+      "samples": "存储样本",
+      "families": "服务家庭",
+      "experience": "专业经验"
+    }
+  },
+  "elderlyCare": {
+    "title": "养老服务",
+    "overview": {
+      "title": "业务概述",
+      "content": "我们提供融合医疗、护理、康复为一体的综合养老解决方案。我们的专业团队由资深护理专家、康复治疗师和医护人员组成，为老年人提供全方位、专业化、有温度的服务。通过智能科技与人文关怀的融合，我们致力于为老年人创造温馨、舒适的生活环境。"
+    },
+    "advantages": {
+      "title": "服务特色",
+      "medical": {
+        "title": "医养结合",
+        "description": "医疗与养老资源深度融合，提供全方位健康管理"
+      },
+      "professional": {
+        "title": "专业护理",
+        "description": "专业护理团队提供24小时优质护理服务"
+      },
+      "rehabilitation": {
+        "title": "康复训练",
+        "description": "科学的康复方案帮助老年人保持身体机能"
+      },
+      "smart": {
+        "title": "智能管理",
+        "description": "运用智能科技提升服务效率和质量"
+      }
+    },
+    "achievements": {
+      "title": "服务规模",
+      "institutions": "养老机构",
+      "beds": "养老床位",
+      "satisfaction": "家属满意度"
+    }
+  },
+  "modernCommerce": {
+    "title": "现代商业",
+    "overview": {
+      "title": "业务概述",
+      "content": "我们致力于打造线上线下融合的现代商业生态。通过创新的商业模式和优质的服务体验，为消费者提供便捷、优质的购物和生活服务。我们的业务涵盖零售、电商、物流等多个领域，形成了完整的商业服务链。"
+    },
+    "platforms": {
+      "title": "业务平台",
+      "retail": {
+        "title": "零售网络",
+        "description": "遍布各地的线下零售网络，提供优质购物体验"
+      },
+      "ecommerce": {
+        "title": "电商平台",
+        "description": "全方位的线上购物平台，随时随地便捷购物"
+      },
+      "logistics": {
+        "title": "物流服务",
+        "description": "高效的物流体系，确保商品快速安全送达"
+      },
+      "membership": {
+        "title": "会员体系",
+        "description": "完善的会员服务体系，提供专属优惠"
+      }
+    },
+    "achievements": {
+      "title": "业务规模",
+      "stores": "零售门店",
+      "users": "平台用户",
+      "gmv": "年度GMV"
+    }
+  }
+}
