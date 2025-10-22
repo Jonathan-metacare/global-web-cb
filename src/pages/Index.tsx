@@ -114,9 +114,9 @@ const Index = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <Card className="border-none shadow-glow max-w-5xl mx-auto bg-gradient-to-br from-card via-card to-card/80 backdrop-blur">
+          <Card className="border-2 border-accent/30 shadow-glow max-w-5xl mx-auto bg-gradient-to-br from-card/90 via-card/95 to-accent/5 backdrop-blur">
             <CardContent className="p-12">
               <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-accent bg-clip-text text-transparent">
                 {t('home.advantages.title')}
@@ -128,7 +128,7 @@ const Index = () => {
                 {[0, 1, 2, 3].map((index) => (
                   <div
                     key={index}
-                    className="pb-8 border-b border-border/50 last:border-0 last:pb-0 animate-fade-in"
+                    className="pb-8 border-b border-accent/20 last:border-0 last:pb-0 animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <h3 className="text-2xl font-bold mb-4 text-primary">
@@ -140,7 +140,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center mt-12 pt-8 border-t border-border/50">
+              <div className="flex justify-center mt-12 pt-8 border-t border-accent/20">
                 <VideoModal />
               </div>
             </CardContent>

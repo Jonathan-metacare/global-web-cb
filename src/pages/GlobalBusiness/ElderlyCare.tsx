@@ -2,28 +2,31 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, Heart, Stethoscope, Users } from "lucide-react";
 import elderlyCareImage from "@/assets/elderly-care.jpg";
+import { useTranslation } from "react-i18next";
 
 const ElderlyCare = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: Home,
-      title: "Senior Communities",
-      description: "Providing premium senior community services, creating warm and comfortable living environments",
+      title: t('elderlyCare.services.communities.title'),
+      description: t('elderlyCare.services.communities.description'),
     },
     {
       icon: Heart,
-      title: "Health Management",
-      description: "Professional health management teams providing comprehensive health monitoring services",
+      title: t('elderlyCare.services.health.title'),
+      description: t('elderlyCare.services.health.description'),
     },
     {
       icon: Stethoscope,
-      title: "Medical Care",
-      description: "Equipped with professional medical facilities and nursing teams ensuring health and safety",
+      title: t('elderlyCare.services.medical.title'),
+      description: t('elderlyCare.services.medical.description'),
     },
     {
       icon: Users,
-      title: "Cultural Activities",
-      description: "Rich cultural and entertainment activities making senior life more fulfilling",
+      title: t('elderlyCare.services.cultural.title'),
+      description: t('elderlyCare.services.cultural.description'),
     },
   ];
 
@@ -102,19 +105,19 @@ const ElderlyCare = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">Service Scale</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">{t('elderlyCare.achievements.title')}</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
                     <div className="text-5xl font-bold mb-2">100+</div>
-                    <div className="text-lg opacity-90">Senior Communities</div>
+                    <div className="text-lg opacity-90">{t('elderlyCare.achievements.communities')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">50,000+</div>
-                    <div className="text-lg opacity-90">Seniors Served</div>
+                    <div className="text-lg opacity-90">{t('elderlyCare.achievements.seniors')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">98%</div>
-                    <div className="text-lg opacity-90">Satisfaction Rate</div>
+                    <div className="text-lg opacity-90">{t('elderlyCare.achievements.satisfaction')}</div>
                   </div>
                 </div>
               </CardContent>

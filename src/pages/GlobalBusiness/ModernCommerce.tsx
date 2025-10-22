@@ -2,28 +2,31 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShoppingBag, Truck, Store, Smartphone } from "lucide-react";
 import modernCommerceImage from "@/assets/modern-commerce.jpg";
+import { useTranslation } from "react-i18next";
 
 const ModernCommerce = () => {
+  const { t } = useTranslation();
+  
   const platforms = [
     {
       icon: Store,
-      title: "Retail Network",
-      description: "Nationwide retail network providing convenient offline shopping experiences",
+      title: t('modernCommerce.platforms.retail.title'),
+      description: t('modernCommerce.platforms.retail.description'),
     },
     {
       icon: Smartphone,
-      title: "E-commerce Platform",
-      description: "Innovative e-commerce platform achieving online-offline integration",
+      title: t('modernCommerce.platforms.ecommerce.title'),
+      description: t('modernCommerce.platforms.ecommerce.description'),
     },
     {
       icon: Truck,
-      title: "Logistics & Delivery",
-      description: "Efficient logistics and delivery system ensuring fast product delivery",
+      title: t('modernCommerce.platforms.logistics.title'),
+      description: t('modernCommerce.platforms.logistics.description'),
     },
     {
       icon: ShoppingBag,
-      title: "Membership Service",
-      description: "Comprehensive membership service system providing personalized shopping experiences",
+      title: t('modernCommerce.platforms.membership.title'),
+      description: t('modernCommerce.platforms.membership.description'),
     },
   ];
 
@@ -101,19 +104,19 @@ const ModernCommerce = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">Business Scale</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">{t('modernCommerce.achievements.title')}</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
                     <div className="text-5xl font-bold mb-2">1,000+</div>
-                    <div className="text-lg opacity-90">Retail Locations</div>
+                    <div className="text-lg opacity-90">{t('modernCommerce.achievements.stores')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">5M+</div>
-                    <div className="text-lg opacity-90">Registered Members</div>
+                    <div className="text-lg opacity-90">{t('modernCommerce.achievements.members')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">$1.5B+</div>
-                    <div className="text-lg opacity-90">Annual Revenue</div>
+                    <div className="text-lg opacity-90">{t('modernCommerce.achievements.revenue')}</div>
                   </div>
                 </div>
               </CardContent>

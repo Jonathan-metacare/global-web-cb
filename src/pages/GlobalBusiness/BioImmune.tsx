@@ -18,7 +18,7 @@ const BioImmune = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <div className="pt-24 pb-20">
+      <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="relative h-[400px] rounded-2xl overflow-hidden mb-16 animate-fade-in">

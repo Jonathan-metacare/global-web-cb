@@ -2,28 +2,31 @@ import Navbar from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Database, Lock, Award, Globe2 } from "lucide-react";
 import stemCellsImage from "@/assets/stem-cells.jpg";
+import { useTranslation } from "react-i18next";
 
 const StemCells = () => {
+  const { t } = useTranslation();
+  
   const features = [
     {
       icon: Database,
-      title: "Professional Storage",
-      description: "Utilizing internationally leading stem cell storage technology to ensure cell viability and safety",
+      title: t('stemCells.features.technology.title'),
+      description: t('stemCells.features.technology.description'),
     },
     {
       icon: Lock,
-      title: "Security Guarantee",
-      description: "Multiple security protection systems with 24/7 monitoring to ensure sample safety",
+      title: t('stemCells.features.standards.title'),
+      description: t('stemCells.features.standards.description'),
     },
     {
       icon: Award,
-      title: "Authoritative Certification",
-      description: "Certified by international authoritative organizations with world-class quality standards",
+      title: t('stemCells.features.monitoring.title'),
+      description: t('stemCells.features.monitoring.description'),
     },
     {
       icon: Globe2,
-      title: "Global Service",
-      description: "Covering major cities worldwide, providing convenient collection and storage services",
+      title: t('stemCells.features.team.title'),
+      description: t('stemCells.features.team.description'),
     },
   ];
 
@@ -100,19 +103,19 @@ const StemCells = () => {
           <section className="animate-fade-in">
             <Card className="shadow-elegant border-none bg-gradient-primary text-white">
               <CardContent className="p-12">
-                <h2 className="text-3xl font-bold mb-8 text-center">Service Statistics</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">{t('stemCells.achievements.title')}</h2>
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                   <div>
                     <div className="text-5xl font-bold mb-2">2M+</div>
-                    <div className="text-lg opacity-90">Families Served</div>
+                    <div className="text-lg opacity-90">{t('stemCells.achievements.families')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">99.9%</div>
-                    <div className="text-lg opacity-90">Cell Viability</div>
+                    <div className="text-lg opacity-90">{t('stemCells.achievements.viability')}</div>
                   </div>
                   <div>
                     <div className="text-5xl font-bold mb-2">5,000+</div>
-                    <div className="text-lg opacity-90">Successful Applications</div>
+                    <div className="text-lg opacity-90">{t('stemCells.achievements.applications')}</div>
                   </div>
                 </div>
               </CardContent>
