@@ -116,17 +116,19 @@ const Index = () => {
       {/* Advantages Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">{t('home.advantages.title')}</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            {t('home.advantages.subtitle')}
-          </p>
-          <Card className="border-none shadow-elegant max-w-5xl mx-auto">
+          <Card className="border-none shadow-glow max-w-5xl mx-auto bg-gradient-to-br from-card via-card to-card/80 backdrop-blur">
             <CardContent className="p-12">
+              <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-accent bg-clip-text text-transparent">
+                {t('home.advantages.title')}
+              </h2>
+              <p className="text-center text-muted-foreground mb-12 text-lg">
+                {t('home.advantages.subtitle')}
+              </p>
               <div className="space-y-8">
                 {[0, 1, 2, 3].map((index) => (
                   <div
                     key={index}
-                    className="pb-8 border-b border-border last:border-0 last:pb-0 animate-fade-in"
+                    className="pb-8 border-b border-border/50 last:border-0 last:pb-0 animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <h3 className="text-2xl font-bold mb-4 text-primary">
@@ -138,7 +140,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center mt-12 pt-8 border-t border-border">
+              <div className="flex justify-center mt-12 pt-8 border-t border-border/50">
                 <VideoModal />
               </div>
             </CardContent>
@@ -197,35 +199,46 @@ const Index = () => {
               <p className="text-muted-foreground text-lg">{t('home.news.subtitle')}</p>
             </div>
             <Link to="/news">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="shadow-glow">
                 {t('home.news.viewAll')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-4 max-w-5xl mx-auto">
             {[0, 1, 2].map((index) => (
-              <Card
+              <Link
                 key={index}
-                className="border-none shadow-elegant hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer group animate-fade-in"
+                to="/news"
+                className="group block animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardContent className="p-6">
-                  <div className="flex items-center text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-4 w-4 mr-2" />
-                    {t(`news.items.${index}.date`)}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                    {t(`news.items.${index}.title`)}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-3">
-                    {t(`news.items.${index}.summary`)}
-                  </p>
-                  <div className="flex items-center text-primary font-medium">
-                    {t('news.readMore')}
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+                <Card className="border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:translate-x-2 cursor-pointer">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-6">
+                      <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-accent flex items-center justify-center">
+                        <Calendar className="h-8 w-8 text-background" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center text-sm text-muted-foreground mb-2">
+                          <span>{t(`news.items.${index}.date`)}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                          {t(`news.items.${index}.title`)}
+                        </h3>
+                        <p className="text-muted-foreground line-clamp-2">
+                          {t(`news.items.${index}.summary`)}
+                        </p>
+                      </div>
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center text-primary font-medium">
+                          {t('news.readMore')}
+                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

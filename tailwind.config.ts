@@ -57,10 +57,12 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-overlay': 'var(--gradient-overlay)',
+        'gradient-accent': 'var(--gradient-accent)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
         'hover': 'var(--shadow-hover)',
+        'glow': 'var(--shadow-glow)',
       },
       keyframes: {
         "accordion-down": {

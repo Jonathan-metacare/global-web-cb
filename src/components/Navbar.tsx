@@ -32,19 +32,43 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border shadow-glow">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+        {/* Logo Row */}
+        <div className="flex items-center justify-between h-16 border-b border-border/50">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
-            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div className="w-8 h-8 bg-gradient-accent rounded-lg shadow-glow"></div>
+            <span className="text-xl font-bold bg-gradient-accent bg-clip-text text-transparent">
               GlobalHealth
             </span>
           </Link>
+          
+          {/* Mobile menu button and language toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
+            >
+              <Languages className="h-5 w-5" />
+              <span className="ml-1 text-xs font-semibold">
+                {i18n.language === 'en' ? 'EN' : '中'}
+              </span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
+        </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+        {/* Desktop Navigation Row */}
+        <div className="hidden md:flex items-center justify-between h-14">
+          <div className="flex items-center space-x-1">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -135,43 +159,21 @@ const Navbar = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            
-            {/* Language Toggle Button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleLanguage}
-              className="ml-2"
-              title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
-            >
-              <Languages className="h-5 w-5" />
-              <span className="ml-1 text-xs font-semibold">
-                {i18n.language === 'en' ? 'EN' : '中'}
-              </span>
-            </Button>
           </div>
-
-          {/* Mobile menu button and language toggle */}
-          <div className="md:hidden flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleLanguage}
-              title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
-            >
-              <Languages className="h-5 w-5" />
-              <span className="ml-1 text-xs font-semibold">
-                {i18n.language === 'en' ? 'EN' : '中'}
-              </span>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+          
+          {/* Language Toggle Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleLanguage}
+            className="ml-2"
+            title={i18n.language === 'en' ? '切换到中文' : 'Switch to English'}
+          >
+            <Languages className="h-5 w-5" />
+            <span className="ml-1 text-xs font-semibold">
+              {i18n.language === 'en' ? 'EN' : '中'}
+            </span>
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
